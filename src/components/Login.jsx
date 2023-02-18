@@ -44,8 +44,8 @@ export const Login = () => {
 					onChange={(e) => setPassword(e.target.value)}
 					placeholder="Password"
 				/>
+        <br />
 				<Link to="/registration">Нету учетной записи? Зарегистрироваться.</Link>
-
 				<div>
 					<button>Войти</button>
 				</div>
