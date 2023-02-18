@@ -22,7 +22,7 @@ export const Wrapper = () => {
 				<h1>Аккаунт</h1>
 				<p>Ваш Email: {user && user.email}</p>
 
-				<button onClick={handleLogout} className="border px-6 py-2 my-4">
+				<button onClick={handleLogout}>
 					Выход из системы
 				</button>
 			</div>
