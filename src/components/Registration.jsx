@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 
+import pic from "../assets/react.svg";
+
 export const Registration = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
@@ -25,10 +27,7 @@ export const Registration = () => {
 	return (
 		<>
 			<div>
-				<img
-					src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
-					alt="Workflow"
-				/>
+				<img src={pic} alt="Workflow" />
 				<h2>Создать учетную запись</h2>
 			</div>
 			<form onSubmit={handleSubmit}>
