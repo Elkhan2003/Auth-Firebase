@@ -2,14 +2,14 @@ import { Login } from "./components/Login";
 import { Registration } from "./components/Registration";
 import { Wrapper } from "./components/wrapper/Wrapper";
 import { Route, Routes } from "react-router-dom";
-import { AuthContextProvider } from "./context/AuthContext";
+import { AuthProvider } from "./provider/AuthProvider";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 
 export const App = () => {
 	return (
 		<>
 			<div>
-				<AuthContextProvider>
+				<AuthProvider>
 					<Routes>
 						<Route path="/login" element={<Login />} />
 						<Route path="/registration" element={<Registration />} />
@@ -22,7 +22,7 @@ export const App = () => {
 							}
 						/>
 					</Routes>
-				</AuthContextProvider>
+				</AuthProvider>
 			</div>
 		</>
 	);

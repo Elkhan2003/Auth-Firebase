@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { UserAuth } from "../../context/AuthContext";
+import { UserAuth } from "../../provider/AuthProvider";
 
 export const Wrapper = () => {
 	const { user, logout } = UserAuth();
@@ -18,8 +18,8 @@ export const Wrapper = () => {
 
 	return (
 		<>
-			<div className=" h-[6000px] max-w-[600px] mx-auto my-16 p-4">
-				<h1 className="text-2xl font-bold py-4">Аккаунт</h1>
+			<div>
+				<h1>Аккаунт</h1>
 				<p>Ваш Email: {user && user.email}</p>
 
 				<button onClick={handleLogout} className="border px-6 py-2 my-4">

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { UserAuth } from "../context/AuthContext";
+import { UserAuth } from "../provider/AuthProvider";
 
 import pic from "../assets/react.svg";
 
@@ -44,7 +44,7 @@ export const Login = () => {
 					onChange={(e) => setPassword(e.target.value)}
 					placeholder="Password"
 				/>
-        <br />
+				<br />
 				<Link to="/registration">Нету учетной записи? Зарегистрироваться.</Link>
 				<div>
 					<button>Войти</button>
