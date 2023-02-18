@@ -1,5 +1,5 @@
-import Login from "./components/Login";
-import Registration from "./components/Registration";
+import { Login } from "./components/Login";
+import { Registration } from "./components/Registration";
 import { Wrapper } from "./components/wrapper/Wrapper";
 import { Route, Routes } from "react-router-dom";
 import { AuthContextProvider } from "./context/AuthContext";
