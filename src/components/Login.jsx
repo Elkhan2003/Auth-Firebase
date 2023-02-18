@@ -28,7 +28,7 @@ export const Login = () => {
 		<>
 			<div>
 				<img src={pic} alt="Workflow" />
-				<h2>Войдите в свою учетную запись</h2>
+				<h2>Войти в учетную запись</h2>
 			</div>
 			<form onSubmit={handleSubmit}>
 				<label htmlFor="email-address" className="sr-only">
